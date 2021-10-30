@@ -1,0 +1,92 @@
+@media only screen and (max-width: 1080px) {
+    html {
+        font-size: 50%;
+    }
+    .grid_container {
+        grid-template-columns: .6fr 1fr 1fr;
+        grid-template-rows: .1fr .07fr 1fr;
+        grid-template-areas: 
+        "head head head"
+        "left left left"
+        "mid mid mid"    
+    }
+    #header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav {
+        padding: 0;
+    }
+    #left_bar {
+        display: flex;
+        margin: 0;
+        padding: .6rem;
+    }
+    .left_content {
+        display: flex;
+    }
+    #left_bar p {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    .profile_pic {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding: 0 2rem;
+        margin: 0;
+    }
+    .beluga_img {
+        max-width: 4.2rem;
+        max-height: 4.2rem;
+        border-radius: 50%;
+        margin: 0;
+        margin-right: 2rem;
+    }
+    
+
+    .left_content {
+        margin: 0 5rem;
+    }
+    
+    .friends, .groups, .dms {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: 0 2rem;
+        padding: 0 2rem;
+    }
+    .friends h2, .groups h2, .dms h2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    .friends img, .groups img, .dms img {
+        max-width: 3rem;
+        max-height: 3rem;
+        margin-right: 1rem; 
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 56%;
+    }
+    .grid_container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .25fr .12fr 1fr;
+        grid-template-areas: 
+        "head head head"
+        "left left left"
+        "mid mid mid"    
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul {
+        margin-top: 1em;
+    }
+}
